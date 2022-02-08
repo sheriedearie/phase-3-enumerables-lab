@@ -7,18 +7,35 @@ def spicy_foods
     { name: 'Buffalo Wings', cuisine: 'American', heat_level: 3 },
     { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 }
   ]
+  # binding.pry
 end
 
 # given an array of spicy foods, **return an array of strings**
 # with the names of each spicy food
 def get_names(spicy_foods)
   # your code here
+  names = []
+  
+  spicy_foods.each do |food|
+    names.append(food[:name])
+    # binding.pry
+  end
+
+  names
 end
 
 # given an array of spicy foods, **return an array of hashes** 
 # where the heat level of the food is greater than 5
 def spiciest_foods(spicy_foods)
   # your code here
+  spice = []
+
+  spicy_foods.each do |heat|
+    spice.append(heat[:name][:cuisine][:heat_level])
+    if heat_level > 5
+      name
+    end
+    end
 end
 
 # given an array of spicy foods, **output to the terminal**
